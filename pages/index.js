@@ -3,9 +3,9 @@ import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {AiFillGithub, AiFillLinkedin} from 'react-icons/ai';
 import Image from 'next/image';
 import hackathon from '../public/hackathon.png';
-import Robbie from '../public/Robbie.jpg';
-import code from '../public/code.png';
-import consulting from '../public/consulting.png'
+import Robbie from '../public/Robbie-1.JPG';
+import movie from '../public/movie_review.png';
+import instagram from '../public/instagram-1.png';
 import { useState } from 'react';
 
 export default function Home() {
@@ -67,30 +67,36 @@ export default function Home() {
             <div className='text-center shadow-lg p-10 rounded-xl my-10'>
               <Image src={hackathon} width={100} height={100}/>
               <h3 className='text-lg font-medium pt-8 pb-2'>Chef Buddy</h3>
-              <p className='py-2'>
+              <p className='py-2 max-w-xs'>
                 Snap a photo of your fridge and see what you can make
               </p>
               <h4 className='py-4 text-teal-600'>Design tools I use</h4>
               <p className='text-gray-800 py-1'>google-vision api</p>
               <p className='text-gray-800 py-1'>firebase</p>
               <p className='text-gray-800 py-1'>javascript</p>
+              <a href='https://devpost.com/software/chefbuddy' className='inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-teal-600 rounded-lg hover:bg-teal-800'>
+                Read More
+              </a>
             </div>
             {/*second project card */}
             <div className='text-center shadow-lg p-10 rounded-xl my-10'>
-              <Image src={code} width={100} height={100}/>
-              <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful design</h3>
-              <p className='py-2'>
-                creating elegant deisng suited for your needs 
+              <Image src={movie} width={100} height={100}/>
+              <h3 className='text-lg font-medium pt-8 pb-2'>Movie Review NLP </h3>
+              <p className='py-2 max-w-xs'>
+                determining between positive and negative movie reviews using sklearn
               </p>
               <h4 className='py-4 text-teal-600'>Design tools I use</h4>
-              <p className='text-gray-800 py-1'>photoshop</p>
-              <p className='text-gray-800 py-1'>figma</p>
-              <p className='text-gray-800 py-1'>illustrator</p>
+              <p className='text-gray-800 py-1'>Python</p>
+              <p className='text-gray-800 py-1'>sklearn library</p>
+              <p className='text-gray-800 py-1'>pandas data cleaning</p>
+              <a href="https://github.com/RobbieHuang2002/movie-review-nlp" className='inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-teal-600 rounded-lg hover:bg-teal-800'>
+                Read More
+              </a>
             </div>
             {/*third project card*/}
             <div className='text-center shadow-lg p-10 rounded-xl my-10'>
-              <Image src={consulting} width={100} height={100}/>
-              <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful design</h3>
+              <Image src={instagram} width={100} height={100}/>
+              <h3 className='text-lg font-medium pt-8 pb-2'></h3>
               <p className='py-2'>
                 creating elegant deisng suited for your needs 
               </p>
@@ -100,11 +106,6 @@ export default function Home() {
               <p className='text-gray-800 py-1'>illustrator</p>
             </div>
           </div>
-          <section>
-            <div>
-              <h3 className='text-3xl py-1'>Portfolio</h3>
-            </div>
-          </section>
         </section>
       </main>
     </div>
