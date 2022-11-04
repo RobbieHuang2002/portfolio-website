@@ -2,8 +2,8 @@ import Head from 'next/head';
 import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {AiFillGithub, AiFillLinkedin} from 'react-icons/ai';
 import Image from 'next/image';
-import deved from '../public/dev-ed-wave.png';
-import design from '../public/design.png';
+import hackathon from '../public/hackathon.png';
+import Robbie from '../public/Robbie.jpg';
 import code from '../public/code.png';
 import consulting from '../public/consulting.png'
 import { useState } from 'react';
@@ -41,34 +41,41 @@ export default function Home() {
             </p>
           </div>
           <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
-            <AiFillGithub />
-            <AiFillLinkedin />
+            <a href='https://github.com/RobbieHuang2002'>
+              <AiFillGithub />
+            </a>
+            <a href='https://www.linkedin.com/in/robbie-huang-8179601b6/'>
+              <AiFillLinkedin />
+            </a>
           </div>
           <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
-            <Image src={deved} layout='fill' objectFit='cover'/>
+            <Image src={Robbie} layout='fill' objectFit='cover'/>
           </div>
         </section>
         
         <section>
-          <div>
-            <h3 className='text-3xl py-1'>Services I offer</h3>
+          <div className='text-center'>
+            {/*projects title */}
+            <h3 className='text-3xl py-1'>Projects I've built</h3>
             <p className='text-md py-2 leading-8 text-gray-80'>
-              Since the beggining of my journey as a freelance develope, I've done remote works blah blah blah
+              Since the beggining of my journey as a developer, I've built different apps! 
             </p>
           </div>
-          <div className='lg:flex gap-10'>
+          {/*project cards*/}
+          <div className='lg:flex justify-center gap-10'>
+            {/*first project card */}
             <div className='text-center shadow-lg p-10 rounded-xl my-10'>
-              <Image src={design} width={100} height={100}/>
-              <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful design</h3>
+              <Image src={hackathon} width={100} height={100}/>
+              <h3 className='text-lg font-medium pt-8 pb-2'>Chef Buddy</h3>
               <p className='py-2'>
-                creating elegant deisng suited for your needs 
+                Snap a photo of your fridge and see what you can make
               </p>
               <h4 className='py-4 text-teal-600'>Design tools I use</h4>
-              <p className='text-gray-800 py-1'>photoshop</p>
-              <p className='text-gray-800 py-1'>figma</p>
-              <p className='text-gray-800 py-1'>illustrator</p>
+              <p className='text-gray-800 py-1'>google-vision api</p>
+              <p className='text-gray-800 py-1'>firebase</p>
+              <p className='text-gray-800 py-1'>javascript</p>
             </div>
-
+            {/*second project card */}
             <div className='text-center shadow-lg p-10 rounded-xl my-10'>
               <Image src={code} width={100} height={100}/>
               <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful design</h3>
@@ -80,7 +87,7 @@ export default function Home() {
               <p className='text-gray-800 py-1'>figma</p>
               <p className='text-gray-800 py-1'>illustrator</p>
             </div>
-
+            {/*third project card*/}
             <div className='text-center shadow-lg p-10 rounded-xl my-10'>
               <Image src={consulting} width={100} height={100}/>
               <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful design</h3>
