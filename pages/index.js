@@ -36,7 +36,7 @@ export default function Home() {
             <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl'>Robbie Huang</h2>
             <h3 className='text-2xl py-2 md:text-3xl dark:text-white'>Developer</h3>
             <p className='text-medium py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-white'>
-              Computer Science student at Queen@apos;s University in 3rd year.
+              Computer Science student at Queens University in 3rd year.
               Enjoys machine learning and web developement!
             </p>
           </div>
@@ -56,9 +56,9 @@ export default function Home() {
         <section>
           <div className='text-center'>
             {/*projects title */}
-            <h3 className="text-3xl py-1 dark:text-white">Projects I@apos;ve built</h3>
+            <h3 className="text-3xl py-1 dark:text-white">Projects I have built</h3>
             <p className="text-md py-2 leading-8 text-gray-80 dark:text-white">
-              Since the beggining of my journey as a developer, I@apos;ve built different apps! 
+              Since the beggining of my journey as a developer, I have built different apps! 
             </p>
           </div>
           {/*project cards*/}
